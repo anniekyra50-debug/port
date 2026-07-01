@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <style>
+        * {
+            padding: 0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+        }
+        #heading {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-bottom: 10px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        li {
+           width: 90px;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        li>a {
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+        }
+         @media(min-width:769px){
+            #logo {
+                text-align: left;
+                margin: 5px 0px 5px 10px;
+            }
+            ul {
+                width: 100%;
+                flex-direction: row;
+                margin: 0px 0px 0px 0px;
+            }
+            li>a{
+                font-weight: normal;
+            }
+        }
+        .img {
+         width:10px;
+         height: 400px;
+         margin-left: 20%;  
+        }
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            color: rgb(175, 65, 26);
+        }
+        p{
+            padding: auto;
+            font-size: x-large;
+        }
+        button {
+            background-color: yellow;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 0px;
+            border-radius: 5px;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <div id="heading">mbe-dev</div>
+    <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+   </header>
+    <section>
+        <div class="img">
+            <img src="cofee.png" alt="cofee">
+        </div>
+        <div>
+        <h3>Your perfect coffee experience</h3>
+        <p>Indulge in artisanal coffee delights. Carfted with</p>
+        <p> passion, brewed with erfection.Savor the Flavor!<p>
+        <button>ORDER NOW</button>
+        </div>
+    </section>
+</body>
+</html>
