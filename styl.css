@@ -93,10 +93,6 @@ top: 0;
     width: 350px;
     border-radius: 50%;
 }
-.about {
-    padding: 80px 8%;
-    margin-top: -10%;
-}
 @media (max-width: 768px) {
             .hero {
                 flex-direction: column-reverse;
