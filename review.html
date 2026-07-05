@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body {
-            background: #0b0b0b;
+            background: #0f172a;
             font-family: Arial, sans-serif;
         }
         section{
@@ -18,9 +18,102 @@
             font-size: 32px;
             margin-bottom: 40px;
         }
+        .review-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .review-card {
+            background: #161616;
+            border-color: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: 3s;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+        .review-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(255, 0, 170, .3);
+        }
+        .review-card img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #b84dff;
+        }
+        .review-card h3 {
+            color: white;
+            margin-bottom: 5px;
+        }
+        .review-card span {
+            color: #b84dff;
+            font-size: 15px;
+        }
+
+        .review-card p {
+            color: #bdbdbd;
+            margin-top: 15px;
+            line-height: 1.7;
+        }
+         @media (max-width: 767px){
+            .review-container{
+                grid-template-columns: 1fr;
+            }
+            h2 {
+                font-size: 30px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+            }
+           }
     </style>
 </head>
 <body>
-    
+     <section id="reviews" class="reviews">
+        <h2>My Clients Review</h2>
+    <div class="review-container">
+        <div class="review-card">
+            <img src="Screenshot 2026-07-05 170344.png" alt="">
+            <h3>DR. Jonah</h3>
+            <span>Account manager</span>
+            <p>"Amazing attention to detail.The final products exceeded expectations"</p>
+        </div>
+        <div class="review-card">
+            <img src="abigail.png" alt="">
+            <h3>Mrs Claire</h3>
+            <span>App developer</span>
+            <p>"Great Service. Very professional and easy to work with. 
+                Highly recommended."</p>
+        </div>
+        <div class="review-card">
+            <img src="claire.png" alt="">
+            <h3>DR. Abigail</h3>
+            <span>Web developer</span>
+            <p>"Delivered exactly what i wanted with excellent quality."</p>
+        </div>
+        <div class="review-card">
+            <img src="Screenshot 2026-07-05 170344.png" alt="">
+            <h3>DR. Sam</h3>
+            <span>Graphics deisgner</span>
+            <p>"Good, but needs improvement."</p>
+        </div>
+        <div class="review-card">
+            <img src="claire.png" alt="">
+            <h3>DR. Lizzy</h3>
+            <span>App Designer</span>
+            <p>"Great, exceeded my expectations."</p>
+        </div>
+        <div class="review-card">
+            <img src="syasya - Copy.png" alt="">
+            <h3>Mrs Sya</h3>
+            <span>Web developer</span>
+            <p>"Delivered exactly what i wanted with excellent quality.".</p>
+        </div>
+    </div>
+     </section>
 </body>
 </html>

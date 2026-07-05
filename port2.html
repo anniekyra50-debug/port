@@ -4,39 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styl.css">
+    <!-- <link rel="stylesheet" href="styl.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+     scroll-behavior: smooth;
+}
+body {
+    background: #0f172a;
+    color: white;
+}
+    .ab {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+}
+.about img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    filter: brightness(200%);
+    float: right;
+     margin-right: 50px;
+}
+/* .img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    filter: hue-rotate(180deg);
+} */
+.content {
+    flex: 1;
+}
+.skill {
+    margin-bottom: 20px;
+}
+.bar {
+    background: #334155;
+    height: 10px;
+}
+.bar span {
+    display: block;
+    height: 100%;
+    background: #3858f8;
+    border-radius: 20px;
+}
+.html {
+    width: 98%;
+}
+.css {
+    width: 95%;
+}
+.javascript {
+    width: 20%;
+}
+.phyton {
+    width: 2%;
+}
+    .btn {
+    margin-top: 10px;
+    padding: 12px 25px;
+    border: none;
+    background: #38bdf8;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.btn:hover {
+    background: #ffffff;
+    color: #38bdf8;
+    transform: scale(1.20);
+}
         img {
-            border-radius: 350px;
-            height: 200px;
-            margin-left: 80%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
         }
         .txt{
             font-weight: bolder;
-            color: aquamarine;
+            color: #38bdf8;
             height: 100px;
             padding: 20px;
         }
         h1 {
             text-align: center;
             text-decoration: underline;
-            color: olive;
+            color: #38bdf8;
         }
         .btn {
-            background-color: aqua;
+            background-color: rgba(23, 221, 23, 0.872);
             color: black;
             text-transform: capitalize;
+        }
+        @media (max-width: 768px) {
+            img {
+                width: 180px;
+                height: 180px;
+                margin: 20px auto;
+                display: block;
+            }
+            .txt {
+                padding: 10px;
+                font-size: 16px;
+                height: auto;
+            }
+            .btn {
+                width: 100%;
+                padding: 12px;
+                font-size: 16px;
+            }
+            .skill {
+                margin-bottom: 25px;
+            }
+            .h1 {
+                font-size: 28px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 1.6;
+            }
         }
     </style>
 </head>
 <body>
+    <section class="about">
     <h1><b>ABOUT ME</b></h1>
-    <p class="txt">
+    <img src="syasya - Copy.png" alt="">
+    <div class="content">
+        <p class="txt">
         Welcome to Sya sya's About...
         I am a web developer with passion for building modern,responsive, and user-friendly websites. I'm always learning new skills and turning ideas into a beautiful digital expressions 
     </p>
-    <img src="syasya - Copy.png" alt="">
     <div class="ab">
             <div class="skill">
                 <h3>HTML</h3>
@@ -62,5 +185,6 @@
     </a>
             </div>
         </div> 
+    </div>
 </body>
 </html>

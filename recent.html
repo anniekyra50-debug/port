@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            background: #0b0b0b;
+            background: #0f172a;
             font-family: Arial, sans-serif;
         }
         section{
@@ -21,16 +21,17 @@
         }
         .work-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minamx (250px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
-        work-card {
-            background: #161616;
+        .work-card {
+            background-color: hsl(purple, rgb(129, 77, 129), white);
             padding: 35px 25px;
             border-radius: 12px;
             text-align: center;
-            transition: 3s;
+            transition: 2s;
             border: 1px solid #222;
+            box-shadow: 0 0 20px rgba(255, 0, 170, .3);
         }
         .work-card:hover {
             transform:translateY(-10px);
@@ -48,6 +49,18 @@
         .work-card p {
             color: #bdbdbd;
             line-height: 1.7;  
+           }
+           @media (max-width: 767px){
+            .work-container{
+                grid-template-columns: 1fr;
+            }
+            h2 {
+                font-size: 30px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+            }
            }
     </style>
 </head>
@@ -68,7 +81,37 @@
             <div class="work-card">
                 <i class="fa fa-code"></i>
                 <h3>App Development</h3>
-                <p>Responsive websites and mobile applications built wiht clean code.</p>
+                <p>Responsive websites and mobile applications built with clean code.</p>
+            </div>
+            <div class="work-card">
+                <i class="fa fa-mobile"></i>
+                <h3>Mobile Friendly</h3>
+                <p>Websites optimized to work perfectly on phones and tournament pages.</p>
+            </div>
+            <div class="work-card">
+                <i class="fa fa-gamepad"></i>
+                <h3>Game Content</h3>
+                <p>Game edits, gaming communities,guild websites and tournament pages.</p>
+            </div>
+            <div class="work-card">
+                <i class="fa fa-camera"></i>
+                <h3>Content Creation</h3>
+                <p>Creative Social media graphics,, edits and digital content.</p>
+            </div>
+            <div class="work-card">
+                <i class="fa fa-shield"></i>
+                <h3>Cyber security</h3>
+                <p>helping protect websites and applicationsby following secure coding practices and identifying common vulnerablilities..</p>
+            </div>
+            <div class="work-card">
+                <i class="fa fa-laptop"></i>
+                <h3>Portfolio  Websites</h3>
+                <p>Creating modern,Responsive portfolio websites that showcase skills, projects and achivement professionally.</p>
+            </div>
+            <div class="work-card">
+                <i class="fa fa-wrench"></i>
+                <h3>Websites Maintenance</h3>
+                <p>Keepibg websites wpdated, fixing bugs, improving performance, and ensuring everything runs smoothly.</p>
             </div>
         </div>
     </section>
